@@ -32,7 +32,7 @@
   const moonStage = $('.moon-stage');
   const moonFace = $('.moon-face');
   const installSteps = $('.install-stage');
-  const installAnyway = $('#install-anyway');
+  const installOpen = $('#install-open');
   const endMark = $('.end-mark');
   const endDot = $('.end-dot');
 
@@ -236,7 +236,7 @@
       inset: 0.9,
     },
     moon: { stage: moonStage, pose: STAND, edge: () => boxIn(moonStage, moonFace), from: 'center', sink: 0.025 },
-    install: { stage: installSteps, pose: PEEK, edge: () => boxIn(installSteps, installAnyway), from: 'right', inset: 1.05 },
+    install: { stage: installSteps, pose: PEEK, edge: () => boxIn(installSteps, installOpen), from: 'right', inset: 1.05 },
     // Debout à côté du point de « hoova. », à sa droite, sur la ligne des lettres : jamais sur le point.
     dot: {
       stage: endMark,
